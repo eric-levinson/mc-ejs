@@ -1,0 +1,29 @@
+.mc-img {
+    background: url("./bg-img.jpg")no-repeat center center;
+    background-size: cover;
+}
+.navbar {
+    z-index: 1;
+}
+.navbar {
+    background-color: #212121;
+}
+.top-nav-collapse {
+    background-color: #1e253f;
+}
+@media only screen and (max-width: 768px) {
+    .navbar {
+        background-color: #1e253f;
+    }
+}
+
+.boy-color {
+  background-color: #1e253f;
+}
+
+html,
+body,
+header,
+.view {
+  height: 100%;
+}

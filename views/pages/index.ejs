@@ -1,0 +1,92 @@
+<!-- views/pages/index.ejs -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <% include ../partials/head %>
+</head>
+<body>
+
+<header>
+    <% include ../partials/header %>
+
+    <div class="mc-img intro-2 h-100">
+      <div class="full-bg-img h-100">
+        <div class="mask rgba-indigo-slight flex-center">
+          <div class="container">
+            <div class="white-text text-center wow fadeInUp">
+              <h1 class="white-text">Yeets Retreat</h1>
+              <h2 class="white-text">Where gamers come to rise up.</h2>
+              <br>
+              <p>Enjoy the full experience on our FTB Direwolf20 server today.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+</header>
+
+<main>
+
+
+
+<div class="text-center py-5 green lighten-4">
+  <div class="container">
+    <div class="row">
+      <!-- Current Players -->
+      <div class="col-md-4 py-3">
+        <p class="h1"><i class="fas fa-globe-americas"></i></p>
+        <h2 class="">Current Players</h2>
+        <h3><span class="badge badge-dark"><%= online %>/<%= max %></span></h3>
+      </div>
+      <!-- Uptime -->
+      <div class="col-md-4 py-3">
+        <p class="h1"><i class="fas fa-quote-right"></i></p>
+        <h2>MOTD</h2>
+        <h3><span class="badge badge-dark"><%= motd %></h3>
+      </div>
+      <div class="col-md-4 py-3">
+        <p class="h1"><i class="fas fa-cubes"></i></p>
+        <h2>Mods and Plugins</h2>
+        <h3><span class="badge badge-dark"><%= modCount %></span></h3>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="text-center py-5 default-color-dark text-light">
+  <div class="container">
+    <div class="row">
+      <!-- Current Players -->
+      <div class="col-md-4 py-3">
+        <p class="h1 text-light"><i class="fas fa-user-friends"></i></p>
+        <h2 class="text-light">Who are we?</h2>
+        <a class="btn btn-light btn-lg text-dark" href="./about/">About Us</a>
+      </div>
+      <!-- Uptime -->
+      <div class="col-md-4 py-3">
+        <p class="h1 text-light"><i class="fas fa-server"></i></p>
+        <h2 class="text-light">Server Info</h2>
+        <a class="btn btn-light btn-lg text-dark" href="./about/">Plugins and Commands</a>
+      </div>
+      <div class="col-md-4 py-3">
+        <p class="h1 text-light"><i class="fas fa-mug-hot"></i></p>
+        <h2 class="text-light">Keep Us Running</h2>
+        <a class="btn btn-light btn-lg text-dark" href="./about/">Donate</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+</main>
+
+<footer>
+    <% include ../partials/footer %>
+</footer>
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+
+
+</body>
+</html>
