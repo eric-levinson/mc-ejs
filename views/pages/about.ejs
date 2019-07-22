@@ -1,0 +1,51 @@
+<!-- views/pages/index.ejs -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <% include ../partials/head %>
+</head>
+<body>
+
+<header>
+    <% include ../partials/header %>
+</header>
+
+<main>
+
+  <div class="py-5 rare-wind-gradient text-dark min-vh-100">
+    <div class="container pt-5">
+      <div class="row">
+        <!-- Current Players -->
+        <div class="content-justify">
+          <h1>What is the Yeet's Retreat?</h1>
+          <p>Yeet's Retreat is a place where gamers can be gamers. This is a judgement free zone ran by gamers for gamers. We go here to escape the oppressive society we live in. If this sounds like you come game today.</p>
+          <h2>Connect to our FTB Direwolf20 server at <span class="badge badge-dark">yeets-retreat.ddns.net</span></h2>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+</main>
+
+<footer>
+    <% include ../partials/footer %>
+</footer>
+
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script>
+$(document).ready(function(){
+  $("#myInput").on("keyup", function() {
+    var value = $(this).val().toLowerCase();
+    $("#myList li").filter(function() {
+      $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+    });
+  });
+});
+</script>
+
+</body>
+</html>

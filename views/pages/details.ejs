@@ -1,0 +1,305 @@
+<!-- views/pages/index.ejs -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <% include ../partials/head %>
+</head>
+<body>
+
+<header>
+    <% include ../partials/header %>
+
+
+</header>
+
+<main>
+
+  <div class="py-5 rare-wind-gradient text-dark min-vh-100">
+
+    <div class="container pt-5">
+        <h1>More Info</h1>
+      <div class="row">
+        <!-- Current Players -->
+
+
+          <div class="col-md-4">
+            <h2>Commands</h2>
+            <input class="form-control" id="myInput" type="text" placeholder="Search..">
+            <br/>
+            <ul class="list-group" id="myList">
+              <li class="list-group-item"><code>/EnderStorage help</code></li>
+              <li class="list-group-item"><code>/advancement <grant|revoke|test> <player></code></li>
+              <li class="list-group-item"><code>Commands provided by Applied Energistics 2 - use /ae2 list for a list, and /ae2 help _____ for help with a command.</code></li>
+              <li class="list-group-item"><code>/aroma1997 reloadclient OR /aroma1997 setupDeathCounter OR /aroma1997 setupDeathCounter <location> OR /aroma1997 setupDeathCounter <location> <name> OR /aroma1997 dimension OR /aroma1997 tp <dimension> OR /aroma1997 tp <x> <y> <z> OR /aroma1997 tp <x> <y> <z> <dimension> OR /aroma1997 tabcomplete <command> OR /aroma1997 openGui OR /aroma1997 debugCrash</code></li>
+              <li class="list-group-item"><code>/dimensionalworld reloadconfig OR /dimensionalworld findstructure</code></li>
+              <li class="list-group-item"><code>/astralsorcery <action> [player] [arguments...]</code></li>
+              <li class="list-group-item"><code>/astralsorcery <action> [player] [arguments...]</code></li>
+              <li class="list-group-item"><code>/biomesoplenty <tpbiome|biomename|stripchunk> [args]</code></li>
+              <li class="list-group-item"><code>DeleteBlockMaps <player></code></li>
+              <li class="list-group-item"><code>/bloodmagic help</code></li>
+              <li class="list-group-item"><code>dumpregistry</code></li>
+              <li class="list-group-item"><code>/biomesoplenty <tpbiome|biomename|stripchunk> [args]</code></li>
+              <li class="list-group-item"><code>/biomesoplenty <tpbiome|biomename|stripchunk> [args]</code></li>
+              <li class="list-group-item"><code>/crafttweaker biomeTypes | biomes | blockinfo | blocks | botania | botbrews | botlexcats | botlexentries | botlexpages | botlextypes | botorechid | bugs | chiselGroups | conflict | copy | discord | docs | dumpzs | enchants | entities | foods | give | hand | help | inventory | jeiCategories | json | liquids | log | mods | names | nbt | oredict | potions | recipeNames | recipes | reload | scripts | seeds | syntax | thaumcraftDump | ticmat | wiki | zslint</code></li>
+              <li class="list-group-item"><code>/cyclopscore <ignite | debug | reloadresources | config | version | recursion></code></li>
+              <li class="list-group-item"><code>/defaultgamemode <mode></code></li>
+              <li class="list-group-item"><code>/deop <player></code></li>
+              <li class="list-group-item"><code>/difficulty <new difficulty></code></li>
+              <li class="list-group-item"><code>/de_upgrade</code></li>
+              <li class="list-group-item"><code>/effect <player> <effect> [seconds] [amplifier] [hideParticles] OR /effect <player> clear</code></li>
+              <li class="list-group-item"><code>/reloadServerConfigs <modid> (<modid2> <modid3> ...)</code></li>
+              <li class="list-group-item"><code>/entitydata <entity> <dataTag></code></li>
+              <li class="list-group-item"><code>/execute <entity> <x> <y> <z> <command> OR /execute <entity> <x> <y> <z> detect <x> <y> <z> <block> <dataValue|-1|state|*> <command></code></li>
+              <li class="list-group-item"><code>/back</code></li>
+              <li class="list-group-item"><code>command.backup.usage</code></li>
+              <li class="list-group-item"><code>/fly</code></li>
+              <li class="list-group-item"><code>/help [page|command name]</code></li>
+              <li class="list-group-item"><code>/inv</code></li>
+              <li class="list-group-item"><code>/ban <name> [reason ...]</code></li>
+              <li class="list-group-item"><code>/ban-ip <address|name> [reason ...]</code></li>
+              <li class="list-group-item"><code>/banlist [ips|players]</code></li>
+              <li class="list-group-item"><code>/baubles <action> [<player> [<params>]]</code></li>
+              <li class="list-group-item"><code>/baubles <action> [<player> [<params>]]</code></li>
+              <li class="list-group-item"><code>/baubles <action> [<player> [<params>]]</code></li>
+              <li class="list-group-item"><code>/oredistribution <radius> [<min height>] [<max height>] [--file]</code></li>
+              <li class="list-group-item"><code>/wandOops</code></li>
+              <li class="list-group-item"><code>/blockdata <x> <y> <z> <dataTag></code></li>
+              <li class="list-group-item"><code>/bcore_ticktime</code></li>
+              <li class="list-group-item"><code>/bcore_util help</code></li>
+              <li class="list-group-item"><code>DeleteBlockMaps <player></code></li>
+              <li class="list-group-item"><code>DeleteBlockMaps <player></code></li>
+              <li class="list-group-item"><code>FindBlockMaps <player></code></li>
+              <li class="list-group-item"><code>FindBlockMaps <player></code></li>
+              <li class="list-group-item"><code>/chunks</code></li>
+              <li class="list-group-item"><code>/clear [player] [item] [data] [maxCount] [dataTag]</code></li>
+              <li class="list-group-item"><code>/clone <x1> <y1> <z1> <x2> <y2> <z2> <x> <y> <z> [maskMode] [cloneMode]</code></li>
+              <li class="list-group-item"><code>/cofh help</code></li>
+              <li class="list-group-item"><code>cofhworld.usage</code></li>
+              <li class="list-group-item"><code>/compactmachines3 [subcommand, leave empty for list of commands]</code></li>
+              <li class="list-group-item"><code>/crafttweaker biomeTypes | biomes | blockinfo | blocks | botania | botbrews | botlexcats | botlexentries | botlexpages | botlextypes | botorechid | bugs | chiselGroups | conflict | copy | discord | docs | dumpzs | enchants | entities | foods | give | hand | help | inventory | jeiCategories | json | liquids | log | mods | names | nbt | oredict | potions | recipeNames | recipes | reload | scripts | seeds | syntax | thaumcraftDump | ticmat | wiki | zslint</code></li>
+              <li class="list-group-item"><code>/crafttweaker biomeTypes | biomes | blockinfo | blocks | botania | botbrews | botlexcats | botlexentries | botlexpages | botlextypes | botorechid | bugs | chiselGroups | conflict | copy | discord | docs | dumpzs | enchants | entities | foods | give | hand | help | inventory | jeiCategories | json | liquids | log | mods | names | nbt | oredict | potions | recipeNames | recipes | reload | scripts | seeds | syntax | thaumcraftDump | ticmat | wiki | zslint</code></li>
+              <li class="list-group-item"><code>/crafttweaker biomeTypes | biomes | blockinfo | blocks | botania | botbrews | botlexcats | botlexentries | botlexpages | botlextypes | botorechid | bugs | chiselGroups | conflict | copy | discord | docs | dumpzs | enchants | entities | foods | give | hand | help | inventory | jeiCategories | json | liquids | log | mods | names | nbt | oredict | potions | recipeNames | recipes | reload | scripts | seeds | syntax | thaumcraftDump | ticmat | wiki | zslint</code></li>
+              <li class="list-group-item"><code>/commoncapabilities <config | version></code></li>
+              <li class="list-group-item"><code>/cyclopscore <ignite | debug | reloadresources | config | version | recursion></code></li>
+              <li class="list-group-item"><code>/integrateddynamics <networkdiagnostics | config | version | crash></code></li>
+              <li class="list-group-item"><code>/integrateddynamicscompat <config | version></code></li>
+              <li class="list-group-item"><code>/integratedtunnels <config | version></code></li>
+              <li class="list-group-item"><code>/integratedtunnelscompat <config | version></code></li>
+              <li class="list-group-item"><code>/debug <start|stop></code></li>
+              <li class="list-group-item"><code>drgen <subcommand> <args> (try 'drgen help' for more info)</code></li>
+              <li class="list-group-item"><code>Usage: /de_reload_custom_fusion</code></li>
+              <li class="list-group-item"><code>/enchant <player> <enchantment ID> [level]</code></li>
+              <li class="list-group-item"><code>/fill <x1> <y1> <z1> <x2> <y2> <z2> <block> [dataValue|state] [oldBlockHandling] [dataTag]</code></li>
+              <li class="list-group-item"><code>/forestry help</code></li>
+              <li class="list-group-item"><code>/forestry help</code></li>
+              <li class="list-group-item"><code>/my_settings <config id> [value]</code></li>
+              <li class="list-group-item"><code>/delhome [home]</code></li>
+              <li class="list-group-item"><code>/delwarp <warp></code></li>
+              <li class="list-group-item"><code>Use /forge <subcommand></code></li>
+              <li class="list-group-item"><code>commands.god.usage</code></li>
+              <li class="list-group-item"><code>/heal [player]</code></li>
+              <li class="list-group-item"><code>/home [list|list_all|home] [player]</code></li>
+              <li class="list-group-item"><code>Use "/ie help" for more information</code></li>
+              <li class="list-group-item"><code>/leaderboards [id]</code></li>
+              <li class="list-group-item"><code>/sethome [home]</code></li>
+              <li class="list-group-item"><code>/spawn</code></li>
+              <li class="list-group-item"><code>/kill [player|entity]</code></li>
+              <li class="list-group-item"><code>/me <action ...></code></li>
+              <li class="list-group-item"><code>/nbtedit</code></li>
+              <li class="list-group-item"><code>/nick <name...></code></li>
+              <li class="list-group-item"><code>/ranks</code></li>
+              <li class="list-group-item"><code>/scoreboardinfo <board> <name></code></li>
+              <li class="list-group-item"><code>/reload [*|domain:*|domain:id]</code></li>
+              <li class="list-group-item"><code>/kickme</code></li>
+              <li class="list-group-item"><code>/killall [type] [dimension]</code></li>
+              <li class="list-group-item"><code>/mute <player></code></li>
+              <li class="list-group-item"><code>/rec</code></li>
+              <li class="list-group-item"><code>commands.rtp.usage</code></li>
+              <li class="list-group-item"><code>/setwarp <warp> <player>|{<x> <y> <z> [dim]}</code></li>
+              <li class="list-group-item"><code>/shutdown</code></li>
+              <li class="list-group-item"><code>/team</code></li>
+              <li class="list-group-item"><code>/tpa <player></code></li>
+              <li class="list-group-item"><code>/tpaccept <player></code></li>
+              <li class="list-group-item"><code>/tpl (<x> <y> <z>) | ([who] <player>)</code></li>
+              <li class="list-group-item"><code>/trash_can</code></li>
+              <li class="list-group-item"><code>/unmute <player></code></li>
+              <li class="list-group-item"><code>/warp <warp></code></li>
+              <li class="list-group-item"><code>/function <name> [if <selector>|unless <selector>]</code></li>
+              <li class="list-group-item"><code>/gamemode <mode> [player]</code></li>
+              <li class="list-group-item"><code>/gamerule <rule name> [value]</code></li>
+              <li class="list-group-item"><code>dumpalleles</code></li>
+              <li class="list-group-item"><code>/givesample <species> <chromosome> <allele></code></li>
+              <li class="list-group-item"><code>/givetemplate <uid></code></li>
+              <li class="list-group-item"><code>/give <player> <item> [amount] [data] [dataTag]</code></li>
+              <li class="list-group-item"><code>/help [page|command name]</code></li>
+              <li class="list-group-item"><code>/ic2 uu-world-scan <tiny|small|medium|large> | debug (dumpUuValues | resolveIngredient <name> | dumpTextures <name> <size> | dumpLargeGrids | enet (logIssues | logUpdates) (true|false)) | currentItem | itemNameWithVariant | giveCrop <owner> <name> <growth (1-31)> <gain (1-31)> <resistance (1-31)></code></li>
+              <li class="list-group-item"><code>/inventorysorter bladd|blrem|show|list (add/remove last sorted container to blacklist, show last container, list blacklisted)</code></li>
+              <li class="list-group-item"><code>/jtp <x y z dim></code></li>
+              <li class="list-group-item"><code>/kick <player> [reason ...]</code></li>
+              <li class="list-group-item"><code>/list</code></li>
+              <li class="list-group-item"><code>/locate <feature></code></li>
+              <li class="list-group-item"><code>lc_buildpart <partname></code></li>
+              <li class="list-group-item"><code>lc_debug</code></li>
+              <li class="list-group-item"><code>lc_exportbuilding <file> <floors></code></li>
+              <li class="list-group-item"><code>lc_exportpart <file> <slices></code></li>
+              <li class="list-group-item"><code>creep_clear</code></li>
+              <li class="list-group-item"><code>creep_list</code></li>
+              <li class="list-group-item"><code>creep_test</code></li>
+              <li class="list-group-item"><code>creeperhostserver.command.killall.usage</code></li>
+              <li class="list-group-item"><code>/chpregen current|dimID xDiameter zDiameter [chunksPerTick, default 5] [preventJoin, default true]</code></li>
+              <li class="list-group-item"><code>/chpregen current|dimID xDiameter zDiameter xStartChunk zStartChunk [chunksPerTick, default 5] [preventJoin, default true]</code></li>
+              <li class="list-group-item"><code>/chpregen remove current|dimID</code></li>
+              <li class="list-group-item"><code>/invite <list|add|remove|reload></code></li>
+              <li class="list-group-item"><code>monk</code></li>
+              <li class="list-group-item"><code>/morph help</code></li>
+              <li class="list-group-item"><code>/morpheus <alert : version> | /morpheus percent <percentage> | /morpheus disable <dimension number></code></li>
+              <li class="list-group-item"><code>/morpheus <alert : version> | /morpheus percent <percentage> | /morpheus disable <dimension number></code></li>
+              <li class="list-group-item"><code>/op <player></code></li>
+              <li class="list-group-item"><code>oc_debugNanomachines</code></li>
+              <li class="list-group-item"><code>oc_debugNanomachines</code></li>
+              <li class="list-group-item"><code>oc_debugWhitelist [revoke|add|remove] <player> OR oc_debugWhitelist [revoke|list]</code></li>
+              <li class="list-group-item"><code>oc_nanomachines [player]</code></li>
+              <li class="list-group-item"><code>oc_nanomachines [player]</code></li>
+              <li class="list-group-item"><code>oc_preventDisassembling <boolean></code></li>
+              <li class="list-group-item"><code>oc_preventDisassembling <boolean></code></li>
+              <li class="list-group-item"><code>oc_preventDisassembling <boolean></code></li>
+              <li class="list-group-item"><code>oc_renderWirelessNetwork <boolean></code></li>
+              <li class="list-group-item"><code>oc_renderWirelessNetwork <boolean></code></li>
+              <li class="list-group-item"><code>oc_sendDebugMessage<destinationAddress> [message...]</code></li>
+              <li class="list-group-item"><code>oc_sendDebugMessage<destinationAddress> [message...]</code></li>
+              <li class="list-group-item"><code>oc_spawnComputer</code></li>
+              <li class="list-group-item"><code>oc_spawnComputer</code></li>
+              <li class="list-group-item"><code>/pardon <name></code></li>
+              <li class="list-group-item"><code>/pardon-ip <address></code></li>
+              <li class="list-group-item"><code>/particle <name> <x> <y> <z> <xd> <yd> <zd> <speed> [count] [mode] [player] [params]</code></li>
+              <li class="list-group-item"><code>/playsound <sound> <source> <player> [x] [y] [z] [volume] [pitch] [minimumVolume]</code></li>
+              <li class="list-group-item"><code>deliverAmazon <x> <y> <z> <inventoryX> <inventorY> <inventoryZ> OR deliverAmazon <player> <inventoryX> <inventorY> <inventoryZ></code></li>
+              <li class="list-group-item"><code>getGlobalVariable <variableName></code></li>
+              <li class="list-group-item"><code>setGlobalVariable <variableName> <x> <y> <z></code></li>
+              <li class="list-group-item"><code>/psi-learn <group> [player]</code></li>
+              <li class="list-group-item"><code>/psi-unlearn <group> [player]</code></li>
+              <li class="list-group-item"><code>rc_dumpmods</code></li>
+              <li class="list-group-item"><code>rc_listRecipes</code></li>
+              <li class="list-group-item"><code>rsmblock <size></code></li>
+              <li class="list-group-item"><code>/recipe <give|take> [player] <name|*></code></li>
+              <li class="list-group-item"><code>/createdisk <player> <item> <metadata> <id></code></li>
+              <li class="list-group-item"><code>/replaceitem <entity|block> ...</code></li>
+              <li class="list-group-item"><code>rftcfg <subcommand> <args> (try 'rftcfg help' for more info)</code></li>
+              <li class="list-group-item"><code>rftshape <subcommand> <args> (try 'rftshape help' for more info)</code></li>
+              <li class="list-group-item"><code>rfttp <subcommand> <args> (try 'rfttp help' for more info)</code></li>
+              <li class="list-group-item"><code>rftdb <subcommand> <args> (try 'rftdb help' for more info)</code></li>
+              <li class="list-group-item"><code>rftdim <subcommand> <args> (try 'rftdim help' for more info)</code></li>
+              <li class="list-group-item"><code>/save-all [flush]</code></li>
+              <li class="list-group-item"><code>/save-off</code></li>
+              <li class="list-group-item"><code>/save-on</code></li>
+              <li class="list-group-item"><code>/say <message ...></code></li>
+              <li class="list-group-item"><code>/scoreboard <objectives|players|teams> ...</code></li>
+              <li class="list-group-item"><code>/seed</code></li>
+              <li class="list-group-item"><code>/setblock <x> <y> <z> <block> [dataValue|state] [oldBlockHandling] [dataTag]</code></li>
+              <li class="list-group-item"><code>/setidletimeout <minutes></code></li>
+              <li class="list-group-item"><code>/setworldspawn [<x> <y> <z>]</code></li>
+              <li class="list-group-item"><code>/spawnpoint [player] [<x> <y> <z>]</code></li>
+              <li class="list-group-item"><code>/spreadplayers <x> <z> <spreadDistance> <maxRange> <respectTeams true|false> <player ...></code></li>
+              <li class="list-group-item"><code>/stats <entity|block> ...</code></li>
+              <li class="list-group-item"><code>/stop</code></li>
+              <li class="list-group-item"><code>/stopsound <player> [source] [sound]</code></li>
+              <li class="list-group-item"><code>commands.storagedrawers.usage</code></li>
+              <li class="list-group-item"><code>/summon <entityname> [x] [y] [z] [dataTag]</code></li>
+              <li class="list-group-item"><code>/teleport <entity> <x> <y> <z> [<y-rot> <x-rot>]</code></li>
+              <li class="list-group-item"><code>/tell <player> <private message ...></code></li>
+              <li class="list-group-item"><code>/tell <player> <private message ...></code></li>
+              <li class="list-group-item"><code>/tell <player> <private message ...></code></li>
+              <li class="list-group-item"><code>/tellraw <player> <raw json message></code></li>
+              <li class="list-group-item"><code>/testfor <player> [dataTag]</code></li>
+              <li class="list-group-item"><code>/testforblock <x> <y> <z> <block> [dataValue|-1|state|*] [dataTag]</code></li>
+              <li class="list-group-item"><code>/testforblocks <x1> <y1> <z1> <x2> <y2> <z2> <x> <y> <z> [mode]</code></li>
+              <li class="list-group-item"><code>/thaumcraft <action> [<player> [<params>]]</code></li>
+              <li class="list-group-item"><code>/thaumcraft <action> [<player> [<params>]]</code></li>
+              <li class="list-group-item"><code>/thaumcraft <action> [<player> [<params>]]</code></li>
+              <li class="list-group-item"><code>/time <set|add|query> <value></code></li>
+              <li class="list-group-item"><code>/title <player> title|subtitle|actionbar|clear|reset|times ...</code></li>
+              <li class="list-group-item"><code>/toggledownfall</code></li>
+              <li class="list-group-item"><code>The number you have entered (39) is too big, it must be at most 31</code></li>
+              <li class="list-group-item"><code>/tophelmet blacklist <add/remove></code></li>
+              <li class="list-group-item"><code>/tophelmet blacklist <add/remove></code></li>
+              <li class="list-group-item"><code>/tp [target player] <destination player> OR /tp [target player] <x> <y> <z> [<yaw> <pitch>]</code></li>
+              <li class="list-group-item"><code>/trigger <objective> <add|set> <value></code></li>
+              <li class="list-group-item"><code>/tffeature <info|reactivate|conquer|center></code></li>
+              <li class="list-group-item"><code>/tffeature <info|reactivate|conquer|center></code></li>
+              <li class="list-group-item"><code>/tffeature <info|reactivate|conquer|center></code></li>
+              <li class="list-group-item"><code>valkyrielib.removeowner</code></li>
+              <li class="list-group-item"><code>/weather <clear|rain|thunder> [duration in seconds]</code></li>
+              <li class="list-group-item"><code>/whitelist <on|off|list|add|remove|reload></code></li>
+              <li class="list-group-item"><code>/worldborder <set|center|damage|warning|get|add> ...</code></li>
+              <li class="list-group-item"><code>xnetcheck</code></li>
+              <li class="list-group-item"><code>xnetdump</code></li>
+              <li class="list-group-item"><code>xnetrebuild</code></li>
+              <li class="list-group-item"><code>/xp <amount> [player] OR /xp <amount>L [player]</code></li>
+              <li class="list-group-item"><code>/worldborder <set|center|damage|warning|get|add> ...</code></li>
+              <li class="list-group-item"><code>xnetcheck</code></li>
+              <li class="list-group-item"><code>xnetdump</code></li>
+              <li class="list-group-item"><code>xnetrebuild</code></li>
+              <li class="list-group-item"><code>/xp <amount> [player] OR /xp <amount>L [player]</code></li>
+            </ul>
+          </div>
+          <div class="col-md-4">
+            <h2>Mod List</h2>
+            <input class="form-control" id="myInputMod" type="text" placeholder="Search..">
+            <br />
+            <ul class="list-group" id="myOtherList">
+              <% for (var i = 0; i < modNames.length; i++) { %>
+              <li class="list-group-item"><%= modNames[i] %></li>
+              <% }; %>
+            </ul>
+          </div>
+          <div class="col-md-4">
+            <h2>Current Players</h2>
+            <input class="form-control" id="myInputPlayer" type="text" placeholder="Search..">
+            <br />
+            <ul class="list-group" id="myThirdList">
+              <% for (var i = 0; i < playerList.length; i++) { %>
+              <li class="list-group-item"><%= playerList[i] %></li>
+              <% }; %>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+</main>
+
+<footer>
+    <% include ../partials/footer %>
+</footer>
+
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script>
+$(document).ready(function(){
+  $("#myInput").on("keyup", function() {
+    var value = $(this).val().toLowerCase();
+    $("#myList li").filter(function() {
+      $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+    });
+  });
+  $("#myInputMod").on("keyup", function() {
+    var value = $(this).val().toLowerCase();
+    $("#myOtherList li").filter(function() {
+      $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+    });
+  });
+  $("#myInputPlayer").on("keyup", function() {
+    var value = $(this).val().toLowerCase();
+    $("#myThirdList li").filter(function() {
+      $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+    });
+  });
+});
+</script>
+
+</body>
+</html>
