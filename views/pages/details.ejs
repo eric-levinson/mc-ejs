@@ -248,9 +248,13 @@
             <input class="form-control" id="myInputMod" type="text" placeholder="Search..">
             <br />
             <ul class="list-group" id="myOtherList">
-              <% for (var i = 0; i < modNames.length; i++) { %>
-              <li class="list-group-item"><%= modNames[i] %></li>
-              <% }; %>
+              <%if (typeof modNames == 'undefined') { %>
+                <li class="list-group-item">No mods found</li>
+              <% } else { %>
+                <% for (var i = 0; i < modNames.length; i++) { %>
+                <li class="list-group-item"><%= modNames[i] %></li>
+                <% }; %>
+              <% } %>
             </ul>
           </div>
           <div class="col-md-4">
@@ -258,9 +262,13 @@
             <input class="form-control" id="myInputPlayer" type="text" placeholder="Search..">
             <br />
             <ul class="list-group" id="myThirdList">
-              <% for (var i = 0; i < playerList.length; i++) { %>
-              <li class="list-group-item"><%= playerList[i] %></li>
-              <% }; %>
+              <%if (typeof playerList == 'undefined') { %>
+                <li class="list-group-item">No players online</li>
+              <% } else { %>
+                <% for (var i = 0; i < playerList.length; i++) { %>
+                <li class="list-group-item"><%= playerList[i] %></li>
+                <% }; %>
+              <% } %>
             </ul>
           </div>
 
