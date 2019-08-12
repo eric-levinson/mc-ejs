@@ -27,14 +27,21 @@ app.get('/', function(req, res) {
 
 
 
+  client.get('', function(err, res, data) {
+    if (typeof data.mods == 'undefined') {
+     data.mods = {
+       names: ['minecraft', 'modname2'],
+       raw: { '0': 'minecraft 1.12.2' }}
+       response = data;
+    } else {
+      response = data;
+    }
+  });
+
   var po = response.players.online
   var pm = response.players.max
   var mn = response.mods.names
   var motd = response.motd.raw
-
-  client.get('', function(err, res, data) {
-    response = data;
-  });
 
   var online = po.toString();
   var max = pm.toString();
@@ -57,13 +64,22 @@ app.get('/about', function(req, res) {
 
 app.get('/details', function(req, res) {
 
+  client.get('', function(err, res, data) {
+    if (typeof data.mods == 'undefined') {
+     data.mods = {
+       names: ['minecraft', 'modname2'],
+       raw: { '0': 'minecraft 1.12.2' }}
+       response = data;
+    } else {
+      response = data;
+    }
+  });
+
 
   var playerList = response.players.list
   var modNames = response.mods.names
 
-  client.get('', function(err, res, data) {
-    response = data;
-  });
+
 
 
 
